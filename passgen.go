@@ -22,9 +22,9 @@ func generatePassword(length int) (string, error) {
 
 func main() {
 	var size int
-	fmt.Println("Enter the password length (1 to 128): ")
+	fmt.Println("Enter the password length (6 to 128): ")
 	fmt.Scanf("%d", &size)
-	if size < 1 || size > 128 {
+	if size < 6 || size > 128 {
 		fmt.Printf("Invalid number %d %s\n", size, "program will be closed.")
 		return
 	}
